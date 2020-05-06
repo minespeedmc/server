@@ -1,0 +1,26 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #2a2c30;
+}
+
+footer .ftop{
+    padding: 30px 40px;
+}
+
+footer .ftop h2{
+    font-size: 40px;
+}
+
+footer .foot{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    text-align: center;
+}
+
+footer .foot .fab{
+    color: #afafaf;
+}

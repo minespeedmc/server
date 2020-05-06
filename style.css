@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #afafaf;
+}
+
+body{
+    background-color: #36393F;
+    color: #afafaf;
+    font-family: 'Exo', sans-serif;
+}
+
+.index{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+main{
+    height: 1000px;
+}
