@@ -7,7 +7,6 @@ header{
     display: flex;
     flex-direction: row;
     background-color: #2A2C30;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,6 +21,7 @@ header{
 
 header .logo{
     font-size: 25px;
+    padding: 10px;
     font-weight: bold;
 }
 
@@ -37,9 +37,9 @@ header .logo a{
 
 /*  --  nav  --  */
 nav{
-    width: 60%;
+    width: 65%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
@@ -47,4 +47,23 @@ nav{
 
 nav a{
     font-size: 20px;
+    padding: 0 5px;
+    margin: 3px;
+}
+
+
+@media (max-width: 800px){
+    header{
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav{
+        width: 100%;
+        background-color: #36393F;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+    nav .div{
+        display: none;
+    }
 }
