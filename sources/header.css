@@ -33,6 +33,7 @@ header .logo img{
 
 header .logo a{
     line-height: 50px;
+	outline: none;
 }
 
 /*  --  nav  --  */
