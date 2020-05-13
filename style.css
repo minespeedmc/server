@@ -21,5 +21,43 @@ body{
 }
 
 main{
-    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.slider{
+    width: 100%;
+    overflow: hidden;  
+    max-height: 500px;  
+}
+
+.slider ul{
+    display: flex;
+    width: 400%;
+    animation: carrusel 20s infinite alternate;
+}
+
+.slider ul li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider ul li img{
+    width: 100%;
+}
+  
+@keyframes carrusel{
+    0%,20%{
+        margin-left: 0;
+    }
+    25%,45%{
+        margin-left: -100%;
+    }
+    50%,70%{
+        margin-left: -200%;
+    }
+    75%,100%{
+        margin-left: -300%;
+    }
 }

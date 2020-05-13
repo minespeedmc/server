@@ -14,7 +14,7 @@
     <!--ico-->
     <link rel=”Shortcut Icon” href="sources/MineSpeed.ico" type=”image/x-icon” />
     <link rel="icon" href="sources/MineSpeed.ico" type="image/png" />
-    <title>MineSpeed</title>
+    <title>Stats</title>
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sources/header.css">
@@ -24,8 +24,9 @@
     <!-- google fonts -->
     <!--Exo-->
     <!--https://fonts.google.com/specimen/Exo-->
-    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!--Scripts-->
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
@@ -33,10 +34,10 @@
         <header>
             <div class="logo">
                 <img src="sources/MineSpeed.jpg" alt="">
-                <a href="#">MineSpeed</a>
+                <a href="index.html">MineSpeed</a>
             </div>
             <nav>
-                <a href="#">Inicio</a>
+                <a href="index.html">Inicio</a>
                 <span class="div">|</span>
                 <a href="noticias.html">Noticias</a>
                 <span class="div">|</span>
@@ -44,21 +45,13 @@
                 <span class="div">|</span>
                 <a href="https://server.pro/server/13769967">Tienda</a>
                 <span class="div">|</span>
-                <a href="stats.html">Stats</a>
+                <a href="#">Stats</a>
                 <span class="div">|</span>
                 <a href="soporte.html">Soporte</a>
             </nav>
         </header>
         <main>
             <div class="espacio"></div>
-            <div class="slider">
-                <ul>
-                    <li><img src="sources/spawn.png" alt=""></li>
-                    <li><img src="sources/mina.png" alt=""></li>
-                    <li><img src="sources/survival.png" alt=""></li>
-                    <li><img src="sources/minapvp.png" alt=""></li>
-                </ul>
-            </div>
         </main>
         <footer>
             <div class="ftop">
@@ -78,6 +71,14 @@
             </div>
         </footer>
     </div>
+    <script>
+        fetch('https://api.namemc.com/server/play.minespeed.ml/likes')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        })
+        .catch(err=>console.log(err))
+    </script>
 </body>
 
 </html>
